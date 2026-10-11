@@ -200,10 +200,9 @@
       @media print {
         @page { margin: 16mm; }
         html, body.x-body { background: #fff !important; color: #000 !important; }
-        body.x-body * { visibility: hidden; }
-        #resume, #resume * { visibility: visible; }
-        .x-bar, .x-hero, .x-lb, .x-close, .x-foot, .x-no-print { display: none !important; }
-        #resume { position: absolute; top: 0; left: 0; right: 0; padding: 0; max-width: none; }
+        body.x-body section:not(#resume), .x-bar, .x-hero, .x-lb, .x-close, .x-foot, .x-no-print, .skip, dialog, video, template { display: none !important; }
+        body.x-body .page, body.x-body main { padding: 0 !important; margin: 0 !important; min-height: 0 !important; height: auto !important; }
+        #resume { position: static; margin: 0 !important; padding: 0 !important; max-width: none; min-height: 0 !important; }
         #resume, #resume * { color: #000 !important; background: transparent !important; border-color: #bbb !important; opacity: 1 !important; transform: none !important; }
         #resume .x-shead { margin-bottom: 12px; }
         #resume .x-shead h2 { font-size: 30pt; }
